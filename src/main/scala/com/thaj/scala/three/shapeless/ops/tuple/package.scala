@@ -1,11 +1,8 @@
-package com.thaj.scala.three
+package com.thaj.scala.three.shapeless.ops
 
-import TypeComputation._
-import com.thaj.scala.three.ShapelessReImpl.Generic
+import com.thaj.scala.three.shapeless.TupleTypes.{Head, Second, TupleInverseMap}
 
-import scala.deriving._
-
-object TupleOps {
+package object tuple {
   def unsafeSequence[T <: Tuple](x: T): Option[TupleInverseMap[T, Option]] = {
     val tupleUnwrapped: Array[Any] = x.productIterator.collect { case Some(v) => v }.toArray
     if x.productArity == tupleUnwrapped.length then Some(Tuple.fromArray(tupleUnwrapped).asInstanceOf[TupleInverseMap[T, Option]]) else None
@@ -19,4 +16,3 @@ object TupleOps {
     a.productIterator.toList.lift(1).map(_.asInstanceOf[Second[T]])
   }
 }
-

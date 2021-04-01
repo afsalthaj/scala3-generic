@@ -1,54 +1,59 @@
 
-import com.thaj.scala.three.ShapelessReImpl.Generic
-import com.thaj.scala.three.{Equal, TupleOps}
-import com.thaj.scala.three.TupleOps.unsafeSequence
 import org.junit.Test
 import org.junit.Assert._
+import com.thaj.scala.three.shapeless.ops.tuple._
+import com.thaj.scala.three.shapeless.ops.product._
+import com.thaj.scala.three.shapeless.Generic
+import com.thaj.scala.three.shapeless.typeclasses.Equal
 
 import scala.deriving._
 
 class TestTupleOps {
-  @Test def headOf() = {
+  @Test def headOfTuple() = {
     val tuple: (String, Int) = "afsal" -> 1
-    val headOfResult: Option[String] = TupleOps.headOf(tuple)
-    assertEquals(headOfResult, Some("afsal"))
+
+    val result: Option[String] = headOf(tuple)
+
+    assertEquals(result, Some("afsal"))
   }
 
-  @Test def unsafeSequence() = {
-    val result: Option[(Int, String)] = TupleOps.unsafeSequence((Some(1), Some("afsal")))
+  @Test def unsafeSequenceTuple() = {
+    val result: Option[(Int, String)] =
+      unsafeSequence((Some(1), Some("afsal")))
+
     assertEquals(result, Some(1 -> "afsal"))
   }
 
-    @Test def testShapelessImpl() = {
-      final case class Abc(a: String, b: Int, c: Double)
-      val string = Generic[Abc].to(Abc("afsal", 1, 1.0))
+  @Test def testShapelessImpl() = {
+    final case class A(a: String, b: Int, c: Double)
 
-      assertEquals(string, ("afsal", 1, 1.0))
-    }
+    val string: (String, Int, Double) =
+      Generic[A].to(A("afsal", 1, 1.0))
 
-  @Test def headOfProduct() = {
-    final case class Bcd(b: String, c: Int, d: Double)
-    val string: Option[String] = Generic.headOfProduct[Bcd](Bcd("afsal", 1, 2.0))
+    assertEquals(string, ("afsal", 1, 1.0))
+  }
+
+  @Test def testHeadOfProduct() = {
+    final case class A(b: String, c: Int, d: Double)
+
+    val string: Option[String] = headOfProduct[A](A("afsal", 1, 2.0))
+
     assertEquals(string, Some("afsal"))
   }
 
+  @Test def testSecondOfProduct() = {
+    final case class A(b: String, c: Int, d: Double)
 
-  @Test def secondOfProduct() = {
-    final case class Bcd(b: String, c: Int, d: Double)
-    val string: Option[Int] = Generic.secondOfProduct[Bcd](Bcd("afsal", 1, 2.0))
-    assertEquals(string, Some("afsal"))
+    val int: Option[Int] = secondOfProduct[A](A("afsal", 1, 2.0))
+
+    assertEquals(int, Some(1))
   }
-  
-  @Test def canEqualWorks() = {
-    import Generic._
-    
-    final case class Cde(b: String, e: Int)
-    
-    val cde = ("afsal", "ssss")
-    val cde2 = cde
-    
-    val boolean = Equal[(String, String)].eq(cde , cde2)
-    
+
+  @Test def testEqualOfProduct() = {
+    final case class A(b: String, e: Int)
+
+    val boolean = Equal[A].eq(A("afsal", 1), A("afsal", 1))
+
     assertEquals(true, boolean)
   }
 }
