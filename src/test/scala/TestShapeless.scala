@@ -2,9 +2,8 @@
 import org.junit.Test
 import org.junit.Assert._
 import com.thaj.scala.three.shapeless.ops.tuple._
-import com.thaj.scala.three.shapeless.ops.product._
 import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.typeclasses.Equal
+import com.thaj.scala.three.shapeless.typeclasses.{Equal, Head, Second}
 
 import scala.deriving._
 
@@ -29,14 +28,14 @@ class TestShapeless {
 
     val string: (String, Int, Double) =
       Generic[A].to(A("afsal", 1, 1.0))
-
+  
     assertEquals(string, ("afsal", 1, 1.0))
   }
 
   @Test def testHeadOfProduct() = {
     final case class A(b: String, c: Int, d: Double)
 
-    val string: Option[String] = headOfProduct[A](A("afsal", 1, 2.0))
+    val string: Option[String] = Head[A].head(A("afsal", 1, 2.0))
 
     assertEquals(string, Some("afsal"))
   }
@@ -44,7 +43,7 @@ class TestShapeless {
   @Test def testSecondOfProduct() = {
     final case class A(b: String, c: Int, d: Double)
 
-    val int: Option[Int] = secondOfProduct[A](A("afsal", 1, 2.0))
+    val int: Option[Int] = Second[A].second(A("afsal", 1, 2.0))
 
     assertEquals(int, Some(1))
   }
