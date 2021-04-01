@@ -1,9 +1,10 @@
 
 import com.thaj.scala.three.ShapelessReImpl.Generic
-import com.thaj.scala.three.TupleOps
+import com.thaj.scala.three.{Equal, TupleOps}
 import com.thaj.scala.three.TupleOps.unsafeSequence
 import org.junit.Test
 import org.junit.Assert._
+
 import scala.deriving._
 
 class TestTupleOps {
@@ -18,13 +19,12 @@ class TestTupleOps {
     assertEquals(result, Some(1 -> "afsal"))
   }
 
-  // FIXME Make this compile
-  //  @Test def testShapelessImpl() = {
-  //    final case class Abc(a: String, b: Int, c: Double)
-  //    val string = Generic[Abc].to(Abc("afsal", 1, 1.0))
-  //
-  //    assertEquals(string, ("afsal", 1, 1.0))
-  //  }
+    @Test def testShapelessImpl() = {
+      final case class Abc(a: String, b: Int, c: Double)
+      val string = Generic[Abc].to(Abc("afsal", 1, 1.0))
+
+      assertEquals(string, ("afsal", 1, 1.0))
+    }
 
   @Test def headOfProduct() = {
     final case class Bcd(b: String, c: Int, d: Double)
@@ -37,5 +37,18 @@ class TestTupleOps {
     final case class Bcd(b: String, c: Int, d: Double)
     val string: Option[Int] = Generic.secondOfProduct[Bcd](Bcd("afsal", 1, 2.0))
     assertEquals(string, Some("afsal"))
+  }
+  
+  @Test def canEqualWorks() = {
+    import Generic._
+    
+    final case class Cde(b: String, e: Int)
+    
+    val cde = ("afsal", "ssss")
+    val cde2 = cde
+    
+    val boolean = Equal[(String, String)].eq(cde , cde2)
+    
+    assertEquals(true, boolean)
   }
 }
