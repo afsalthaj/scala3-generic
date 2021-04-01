@@ -8,7 +8,7 @@ import com.thaj.scala.three.shapeless.typeclasses.Equal
 
 import scala.deriving._
 
-class TestTupleOps {
+class TestShapeless {
   @Test def headOfTuple() = {
     val tuple: (String, Int) = "afsal" -> 1
 
