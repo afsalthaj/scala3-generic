@@ -24,7 +24,7 @@ class TestShapeless {
     assertEquals(result, Some(1 -> "afsal"))
   }
 
-  @Test def testShapelessImpl() = {
+  @Test def testGenericRepr() = {
     final case class A(a: String, b: Int, c: Double)
 
     val string: (String, Int, Double) =
