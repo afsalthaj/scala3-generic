@@ -11,9 +11,9 @@ class TestShapeless {
   @Test def headOfTuple() = {
     val tuple: (String, Int) = "afsal" -> 1
 
-    val result: Option[String] = headOf(tuple)
+    val result: String = headOf(tuple)
 
-    assertEquals(result, Some("afsal"))
+    assertEquals(result, "afsal")
   }
 
   @Test def unsafeSequenceTuple() = {
@@ -35,9 +35,9 @@ class TestShapeless {
   @Test def testHeadOfProduct() = {
     final case class A(b: String, c: Int, d: Double)
 
-    val string: Option[String] = Head[A].head(A("afsal", 1, 2.0))
+    val string: String = Head[A].head(A("afsal", 1, 2.0))
 
-    assertEquals(string, Some("afsal"))
+    assertEquals(string, "afsal")
   }
 
   @Test def testSecondOfProduct() = {

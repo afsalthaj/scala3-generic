@@ -6,7 +6,7 @@ import com.thaj.scala.three.shapeless.ops.tuple._
 
 trait Head[A] {
   type Out
-  def head(a: A): Option[Out]
+  def head(a: A): Out
 }
 
 object Head extends TupleHeadInstances with ProductHeadInstances {
@@ -17,14 +17,14 @@ object Head extends TupleHeadInstances with ProductHeadInstances {
 trait TupleHeadInstances {
   given headOfTuple[A <: Tuple]: Head.Aux[A, TupleTypes.Head[A]] = new Head[A] {
     override type Out = TupleTypes.Head[A]
-    override def head(a: A): Option[TupleTypes.Head[A]] = headOf(a)
+    override def head(a: A): TupleTypes.Head[A] = headOf(a)
   }
 }
 
 trait ProductHeadInstances {
   given headInstanceOfProduct[A, Repr <: Tuple](using G: Generic.Aux[A, Repr]): Head.Aux[A, TupleTypes.Head[Repr]] = new Head[A] {
     override type Out = TupleTypes.Head[Repr]
-    override def head(a: A): Option[TupleTypes.Head[Repr]] = {
+    override def head(a: A): TupleTypes.Head[Repr] = {
       val tuple: Repr = G.to(a)
       headOf(tuple)
     }
