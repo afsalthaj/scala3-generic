@@ -24,11 +24,11 @@ package object tuple {
     case h *: tail => tail.asInstanceOf[Tail[T]]
   }
 
-  // identity that inspects each element yet returns the actual type - for demonstation
+  // Stupid identity that inspects just the head and form a tuple back  - for demonstation
   def identity[A, Repr <: Tuple, H1, T <: Tuple](a: A)(
     using AG: Generic.Aux[A, Repr],
     h: typeclasses.Head.Aux[Repr, H1],
-    t: typeclasses.Tail.Aux[Repr, T]
+    t: typeclasses.Tail.Aux[Repr, T],
   ): H1 *: T = {
     val repr: Repr = AG.to(a)
     val tail: T = t.tail(repr)
