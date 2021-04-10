@@ -1,0 +1,102 @@
+
+ôsrc/test/scala/TestBounds.scala*&
+_empty_/TestBounds#*
+TestBounds€*0
+_empty_/TestBounds#`<init>`(). €@*<init>€*9
+#_empty_/TestBounds#testBoundsMax().*testBoundsMax€*
+local0 €*bounded€*
+local1 €*int€*9
+#_empty_/TestBounds#testBoundsMin().*testBoundsMin€*
+local2 €*bounded€*
+local3 €*int€*E
+)_empty_/TestBounds#testBoundsInBetween().*testBoundsInBetween€*
+local4 €*bounded€*
+local5 €*int€2
+ org/junit/Test.2
+ org/junit/Test#2
+ 
+org/junit/2
+ 
+org/2
+ org/junit/Assert#2
+ 
+org/junit/2
+ 
+org/27
+* /)com/thaj/scala/three/shapeless/ops/tuple/21
+& )#com/thaj/scala/three/shapeless/ops/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/25
+& -'com/thaj/scala/three/shapeless/Generic.25
+& -'com/thaj/scala/three/shapeless/Generic#2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/2?
+3 81com/thaj/scala/three/shapeless/typeclasses/Equal.2?
+3 81com/thaj/scala/three/shapeless/typeclasses/Equal#2>
+: >0com/thaj/scala/three/shapeless/typeclasses/Head.2>
+: >0com/thaj/scala/three/shapeless/typeclasses/Head#2@
+@ F2com/thaj/scala/three/shapeless/typeclasses/Second.2@
+@ F2com/thaj/scala/three/shapeless/typeclasses/Second#29
+& 1+com/thaj/scala/three/shapeless/typeclasses/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/24
+& ,&com/thaj/scala/three/shapeless/bounds/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/2!
+		 _empty_/TestBounds#2,
+
+
+ _empty_/TestBounds#`<init>`().2
+
+
+ org/junit/Test#21
+
+
+ #_empty_/TestBounds#testBoundsMax().2
+ local02B
+ 4com/thaj/scala/three/shapeless/bounds/package.Bound#2
+ local12
+ 
+scala/Int#2
+ local020
+ "org/junit/Assert#assertEquals(+4).2#
+ scala/Int.int2long().2
+ local12
+ org/junit/Test#21
+ #_empty_/TestBounds#testBoundsMin().2
+ local22B
+ 4com/thaj/scala/three/shapeless/bounds/package.Bound#2
+ local32
+ 
+scala/Int#2
+ local220
+ "org/junit/Assert#assertEquals(+4).2#
+ scala/Int.int2long().2
+ local32
+ org/junit/Test#27
+ )_empty_/TestBounds#testBoundsInBetween().2
+ local42B
+ 4com/thaj/scala/three/shapeless/bounds/package.Bound#2
+ local52
+ 
+scala/Int#2
+ local420
+ "org/junit/Assert#assertEquals(+4).2#
+ scala/Int.int2long().2
+ local5PZ 1996B2394CEBC98569429D1338A78DA2

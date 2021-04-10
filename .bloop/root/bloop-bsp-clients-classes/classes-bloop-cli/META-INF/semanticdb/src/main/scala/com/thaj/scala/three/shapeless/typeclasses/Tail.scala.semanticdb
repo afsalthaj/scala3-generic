@@ -1,0 +1,108 @@
+
+ä.Dsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/Tail.scala*=
+0com/thaj/scala/three/shapeless/typeclasses/Tail#*Tail€*M
+;com/thaj/scala/three/shapeless/typeclasses/Tail#`<init>`(). €@*<init>€*=
+3com/thaj/scala/three/shapeless/typeclasses/Tail#[A]	*A€*@
+4com/thaj/scala/three/shapeless/typeclasses/Tail#Out#*Out€*F
+7com/thaj/scala/three/shapeless/typeclasses/Tail#tail(). *tail€*D
+:com/thaj/scala/three/shapeless/typeclasses/Tail#tail().(a)*a€*?
+0com/thaj/scala/three/shapeless/typeclasses/Tail.
+ *Tail€*@
+4com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#*Aux€*A
+7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[A]	*A€*A
+7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[B]	*B€*
+local0*Out€*F
+8com/thaj/scala/three/shapeless/typeclasses/Tail.apply().*apply€*E
+;com/thaj/scala/three/shapeless/typeclasses/Tail.apply().[A]	*A€*I
+<com/thaj/scala/three/shapeless/typeclasses/Tail.apply().(ev)  *ev€*f
+Fcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.
+ (*given_Tail_EmptyTuple€*V
+Jcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.Out#*Out€*Z
+Mcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.tail().*tail€*Z
+Pcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.tail().(a)*a€*T
+>com/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple(). (*tailOfTuple€*K
+Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]	*A€*
+local1 *$anon€*
+local2*Out€*
+local3*tail€*
+local4*a€25
+' 2+com/thaj/scala/three/shapeless/typeclasses/2)
+ &com/thaj/scala/three/shapeless/2
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ com/28
+& 0*com/thaj/scala/three/shapeless/TupleTypes.2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/27
+* /)com/thaj/scala/three/shapeless/ops/tuple/21
+& )#com/thaj/scala/three/shapeless/ops/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/2>
+ 
+0com/thaj/scala/three/shapeless/typeclasses/Tail#2I
+
+ 
+;com/thaj/scala/three/shapeless/typeclasses/Tail#`<init>`().2A
+ 3com/thaj/scala/three/shapeless/typeclasses/Tail#[A]2B
+ 4com/thaj/scala/three/shapeless/typeclasses/Tail#Out#2E
+ 7com/thaj/scala/three/shapeless/typeclasses/Tail#tail().2H
+ :com/thaj/scala/three/shapeless/typeclasses/Tail#tail().(a)2A
+ 3com/thaj/scala/three/shapeless/typeclasses/Tail#[A]2B
+ 4com/thaj/scala/three/shapeless/typeclasses/Tail#Out#2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Tail.2B
+ 
+4com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#2E
+ 7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[A]2E
+ 7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[B]2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Tail#2E
+ 7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[A]2
+  #local02E
+& '7com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#[B]2F
+ 8com/thaj/scala/three/shapeless/typeclasses/Tail.apply().2I
+ ;com/thaj/scala/three/shapeless/typeclasses/Tail.apply().[A]2J
+ <com/thaj/scala/three/shapeless/typeclasses/Tail.apply().(ev)2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Tail#2I
+ ;com/thaj/scala/three/shapeless/typeclasses/Tail.apply().[A]2B
+# &4com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#2I
+' (;com/thaj/scala/three/shapeless/typeclasses/Tail.apply().[A]2B
+- 04com/thaj/scala/three/shapeless/typeclasses/Tail#Out#2J
+* ,<com/thaj/scala/three/shapeless/typeclasses/Tail.apply().(ev)2J
+4 6<com/thaj/scala/three/shapeless/typeclasses/Tail.apply().(ev)2T
+ Fcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Tail#2-
+ scala/Tuple$package.EmptyTuple#2X
+	 Jcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.Out#2-
+ scala/Tuple$package.EmptyTuple#2[
+ Mcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.tail().2^
+ Pcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.tail().(a)2-
+ scala/Tuple$package.EmptyTuple#2X
+  Jcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.Out#2^
+# $Pcom/thaj/scala/three/shapeless/typeclasses/Tail.given_Tail_EmptyTuple.tail().(a)2L
+ >com/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().2O
+ Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2
+ scala/Tuple#2>
+! %0com/thaj/scala/three/shapeless/typeclasses/Tail#2O
+& 'Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2>
+/ 30com/thaj/scala/three/shapeless/typeclasses/Tail#2O
+4 5Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2
+	 local22=
+ /com/thaj/scala/three/shapeless/TupleTypes.Tail#28
+ *com/thaj/scala/three/shapeless/TupleTypes.2O
+  Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2
+ local32
+ local42O
+ Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2=
+ #/com/thaj/scala/three/shapeless/TupleTypes.Tail#28
+ *com/thaj/scala/three/shapeless/TupleTypes.2O
+$ %Acom/thaj/scala/three/shapeless/typeclasses/Tail.tailOfTuple().[A]2H
+) /:com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().2
+0 1local4PZ FA5474768435ACFF763770F52E259EA0

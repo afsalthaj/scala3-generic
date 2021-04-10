@@ -1,0 +1,287 @@
+
+ôoEsrc/main/scala/com/thaj/scala/three/shapeless/ops/tuple/package.scala*A
+1com/thaj/scala/three/shapeless/ops/tuple/package. *tuple€*Y
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().*unsafeSequence€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().[T]	*T€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().(x)*x€* 
+local0 €*tupleUnwrapped€*
+local1*x$1€*
+local2 €*v€*I
+:com/thaj/scala/three/shapeless/ops/tuple/package.headOf().*headOf€*G
+=com/thaj/scala/three/shapeless/ops/tuple/package.headOf().[T]	*T€*G
+=com/thaj/scala/three/shapeless/ops/tuple/package.headOf().(c)*c€*M
+<com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().*secondOf€*I
+?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().[T]	*T€*I
+?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().(a)*a€*I
+:com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().*tailOf€*G
+=com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().[T]	*T€*G
+=com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().(a)*a€*
+local3 €*h€*
+local4 €*tail€*M
+<com/thaj/scala/three/shapeless/ops/tuple/package.identity().*identity€*I
+?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[A]	*A€*O
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]	*Repr€*K
+@com/thaj/scala/three/shapeless/ops/tuple/package.identity().[H1]	*H1€*I
+?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[T]	*T€*I
+?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(a)*a€*M
+@com/thaj/scala/three/shapeless/ops/tuple/package.identity().(AG)  *AG€*K
+?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(h)  *h€*K
+?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(t)  *t€*
+local5 €*repr€*
+local6 €*tail€*
+local7 €*head€*Y
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().*mapNonInferred€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[A]	*A€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[F]	*F€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(a)*a€*O
+Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(f)*f€*
+local8 *apply€*
+local9	*A€*
+local10*x$1€*
+local11*a€*S
+?com/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().*mapInferred€*L
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[A]	*A€*L
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(a)*a€*L
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[F]	*F€*L
+Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(f)*f€*
+local12 *apply€*
+local13	*A€*
+local14*x$1€2-
+' *#com/thaj/scala/three/shapeless/ops/2)
+ &com/thaj/scala/three/shapeless/2
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ com/28
+& 0*com/thaj/scala/three/shapeless/TupleTypes.2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/25
+& -'com/thaj/scala/three/shapeless/Generic.25
+& -'com/thaj/scala/three/shapeless/Generic#2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/29
+& 1+com/thaj/scala/three/shapeless/typeclasses/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/2?
+ 1com/thaj/scala/three/shapeless/ops/tuple/package.25
+	 'com/thaj/scala/three/shapeless/Generic.2P
+		 Bcom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().2S
+		 Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().[T]2
+		 scala/Tuple#2S
+	!	 "Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().(x)2S
+	$	 %Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().[T]2
+	(	 .scala/Option#2H
+	/	 >:com/thaj/scala/three/shapeless/TupleTypes.TupleInverseMap#2S
+	?	 @Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().[T]2
+
+
+ local02
+
+
+ scala/Array#2
+
+
+ !
+scala/Any#29
+
+U
+ \+scala/collection/IterableOnceOps#toArray().22
+
+7
+ >$scala/collection/Iterator#collect().2.
+
+'
+ 6 scala/Product#productIterator().2S
+
+%
+ &Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().(x)2
+
+A
+ Alocal12#
+
+J
+ Jscala/Some.unapply().2
+
+F
+ Jscala/Some.2
+
+K
+ Llocal22
+
+Q
+ Rlocal22)
+
+\
+ \scala/reflect/ClassTag.Any.2!
+ scala/Int#`==`(+3).2+
+	 scala/Product#productArity().2S
+ Ecom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().(x)2#
+( .scala/Array#length().2
+ 'local02!
+8 8scala/Some.apply().2
+4 8scala/Some.2'
+Y escala/Any#asInstanceOf().2&
+? Hscala/Tuple.fromArray().2
+9 >scala/Tuple.2
+I Wlocal02H
+f u:com/thaj/scala/three/shapeless/TupleTypes.TupleInverseMap#2S
+v wEcom/thaj/scala/three/shapeless/ops/tuple/package.unsafeSequence().[T]2
+
+ˆ Œscala/None.2H
+ :com/thaj/scala/three/shapeless/ops/tuple/package.headOf().2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.headOf().[T]2
+ scala/Tuple#2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.headOf().(c)2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.headOf().[T]2=
+  $/com/thaj/scala/three/shapeless/TupleTypes.Head#2K
+% &=com/thaj/scala/three/shapeless/ops/tuple/package.headOf().[T]2'
+" .scala/Any#asInstanceOf().22
+ !$scala/collection/IterableOps#head().28
+ *scala/collection/IterableOnceOps#toList().2.
+  scala/Product#productIterator().2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.headOf().(c)2=
+/ 3/com/thaj/scala/three/shapeless/TupleTypes.Head#2K
+4 5=com/thaj/scala/three/shapeless/ops/tuple/package.headOf().[T]2J
+ <com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().[T]2
+ scala/Tuple#2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().(a)2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().[T]2
+" (scala/Option#2?
+) /1com/thaj/scala/three/shapeless/TupleTypes.Second#2M
+0 1?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().[T]2!
+% (scala/Option#map().2&
+! !scala/Function1#apply().2+
+ !scala/PartialFunction#lift().28
+ *scala/collection/IterableOnceOps#toList().2.
+  scala/Product#productIterator().2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().(a)2'
++ 7scala/Any#asInstanceOf().2?
+8 >1com/thaj/scala/three/shapeless/TupleTypes.Second#2M
+? @?com/thaj/scala/three/shapeless/ops/tuple/package.secondOf().[T]2H
+ :com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().[T]2
+ scala/Tuple#2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().(a)2K
+ =com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().[T]2=
+  $/com/thaj/scala/three/shapeless/TupleTypes.Tail#2K
+% &=com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().[T]2K
+* +=com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().(a)2#
+ scala/`*:`.unapply().2
+ scala/`*:`.2
+	 
+local32
+ local42'
+ 'scala/Any#asInstanceOf().2
+ local42=
+( ,/com/thaj/scala/three/shapeless/TupleTypes.Tail#2K
+- .=com/thaj/scala/three/shapeless/ops/tuple/package.tailOf().[T]2J
+ <com/thaj/scala/three/shapeless/ops/tuple/package.identity().2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[A]2P
+ Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]2
+ scala/Tuple#2N
+! #@com/thaj/scala/three/shapeless/ops/tuple/package.identity().[H1]2M
+% &?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[T]2
+* /scala/Tuple#2M
+1 2?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(a)2M
+4 5?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[A]2N
+
+ @com/thaj/scala/three/shapeless/ops/tuple/package.identity().(AG)29
+ +com/thaj/scala/three/shapeless/Generic.Aux#25
+ 'com/thaj/scala/three/shapeless/Generic.2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[A]2P
+ !Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(h)2B
+ 4com/thaj/scala/three/shapeless/typeclasses/Head.Aux#2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Head.29
+ +com/thaj/scala/three/shapeless/typeclasses/2P
+  Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]2N
+" $@com/thaj/scala/three/shapeless/ops/tuple/package.identity().[H1]2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(t)2B
+ 4com/thaj/scala/three/shapeless/typeclasses/Tail.Aux#2>
+ 0com/thaj/scala/three/shapeless/typeclasses/Tail.29
+ +com/thaj/scala/three/shapeless/typeclasses/2P
+  Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]2M
+" #?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[T]2
+ 
+scala/`*:`#2N
+ @com/thaj/scala/three/shapeless/ops/tuple/package.identity().[H1]2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[T]2
+   local52P
+   Bcom/thaj/scala/three/shapeless/ops/tuple/package.identity().[Repr]2:
+   ,com/thaj/scala/three/shapeless/Generic#to().2N
+   @com/thaj/scala/three/shapeless/ops/tuple/package.identity().(AG)2M
+   ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(a)2
+!! local62M
+!! ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().[T]2E
+!! 7com/thaj/scala/three/shapeless/typeclasses/Tail#tail().2M
+!! ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(t)2
+!! local52
+"" local72N
+"" @com/thaj/scala/three/shapeless/ops/tuple/package.identity().[H1]2E
+"" 7com/thaj/scala/three/shapeless/typeclasses/Head#head().2M
+"" ?com/thaj/scala/three/shapeless/ops/tuple/package.identity().(h)2
+"" local52!
+## scala/Tuple#`*:`().2
+## local62
+## local72P
+'' Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().2S
+'' Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[A]2
+'' scala/Tuple#2S
+'!' "Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[F]2S
+''' (Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(a)2S
+'*' +Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[A]2S
+'-' .Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(f)2
+'1' 1local82
+'1' 2local92S
+'<' =Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[F]2
+'>' ?local92A
+'C' K3com/thaj/scala/three/shapeless/TupleTypes.TupleMap#2S
+'L' MEcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[A]2S
+'O' PEcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[F]2'
+(>( Jscala/Any#asInstanceOf().2&
+(
+( scala/Tuple.fromArray().2
+(( 	scala/Tuple.29
+(5( <+scala/collection/IterableOnceOps#toArray().2.
+(&( ) scala/collection/Iterator#map().2.
+(( % scala/Product#productIterator().2S
+(( Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(a)2
+(*( +local112S
+(/( 0Ecom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().(f)2
+(1( 2local112-
+(<( <scala/reflect/ClassTag.apply().2A
+(K( S3com/thaj/scala/three/shapeless/TupleTypes.TupleMap#2S
+(T( UEcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[A]2S
+(W( XEcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().[F]2M
+++ ?com/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().2P
+** Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[A]2
+** scala/Tuple#2P
+** Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(a)2P
+** Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[A]2P
+++ Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[F]2P
+++ Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(f)2
+++ local122
+++ local132P
++)+ *Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[F]2
++++ ,local132A
++0+ 83com/thaj/scala/three/shapeless/TupleTypes.TupleMap#2P
++9+ :Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[A]2P
++<+ =Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[F]2P
+,, Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapNonInferred().2P
+,, Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[A]2P
+,, Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().[F]2P
+,, Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(a)2P
+,, Bcom/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().(f)PZ C1BC7BA0819817BBAA5025101B8EA64E

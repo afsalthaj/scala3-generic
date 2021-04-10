@@ -1,0 +1,43 @@
+
+âJsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/InbuiltMap.scala*Y
+=com/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.
+ *InbuiltMapExample€*L
+?com/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.s. €*s€*
+local0 €*x$2€*
+local1 €*x$1€*K
+Acom/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.c().*c€*
+local2 *$anon€*
+local3*apply€*
+local4	*A€*
+local5*a€25
+' 2+com/thaj/scala/three/shapeless/typeclasses/2)
+ &com/thaj/scala/three/shapeless/2
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ com/2K
+ =com/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.2M
+ ?com/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.s.2
+
+ scala/Option#2
+ 
+scala/Int#2
+ scala/Option#2
+ !
+scala/Int#2!
+R Rscala/Tuple#`*:`().2-
+H Rscala/Tuple$package.EmptyTuple.2
+2 2local12
+* *local02O
+ Acom/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.c().2 
+ 	scala/Tuple#map().2M
+ ?com/thaj/scala/three/shapeless/typeclasses/InbuiltMapExample.s.2!
+
+ scala/package.List#2
+ local32
+ local42
+ local52
+ local427
+& &)scala/collection/IterableFactory#apply().2!
+" &scala/package.List.2
+' (local5PZ D81B64549D32A9BAB2085CDD96619603

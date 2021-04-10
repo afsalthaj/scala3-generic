@@ -1,0 +1,59 @@
+
+øWsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.scala*e
+Ccom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.
+ *InbuiltSimpleMapExample€*Z
+Icom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.tuple. €*tuple€*R
+Ecom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.s. €*s€*
+local0 *$anon€*
+local1*apply€*
+local2	*A€*
+local3*a€25
+' 2+com/thaj/scala/three/shapeless/typeclasses/2)
+ &com/thaj/scala/three/shapeless/2
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ com/28
+& 0*com/thaj/scala/three/shapeless/TupleTypes.2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/27
+* /)com/thaj/scala/three/shapeless/ops/tuple/21
+& )#com/thaj/scala/three/shapeless/ops/2-
+ %com/thaj/scala/three/shapeless/2#
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ 
+com/2Q
+ Ccom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.2
+' *
+scala/App#2W
+ Icom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.tuple.2
+ 
+scala/Int#2
+ scala/Double#2!
+ scala/Tuple#`*:`().2-
+ scala/Tuple$package.EmptyTuple.2S
+ Ecom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.s.2
+
+ scala/Option#2
+ 
+scala/Int#2
+ scala/Option#2
+ $scala/Double#2M
+ ?com/thaj/scala/three/shapeless/ops/tuple/package.mapInferred().2W
+ 	Icom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.tuple.2
+ local12
+ local22
+ local32
+! "local22!
++ +scala/Some.apply().2
+' +scala/Some.2
+, -local32'
+ 	scala/Predef.println(+1).2S
+
+ Ecom/thaj/scala/three/shapeless/typeclasses/InbuiltSimpleMapExample.s.PZ 7E01EC76F8C66AC0E66AE244E1811A56

@@ -3,7 +3,7 @@ import org.junit.Test
 import org.junit.Assert._
 import com.thaj.scala.three.shapeless.ops.tuple._
 import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.typeclasses.{Equal, Head, Second}
+import com.thaj.scala.three.shapeless.typeclasses.{Equal, Head, Second, MapperBasic}
 
 import scala.deriving._
 
@@ -54,5 +54,18 @@ class TestShapeless {
     val boolean = Equal[A].eq(A("afsal", 1), A("afsal", 1))
 
     assertEquals(true, boolean)
+  }
+
+  @Test def testMapperOfTuple() = {
+    import MapperBasic._
+
+    given MapperBasic.Case.Aux[Int, Int] = MapperBasic.Case.createInstance(i => i * i)
+    given MapperBasic.Case.Aux[Double, Double] = MapperBasic.Case.createInstance(i => i * i)
+    
+    val tuple = (2, 4.0)
+    val result: (Int, Double) = tuple.mapElements
+
+    assertEquals(result, (4, 16.0))
+     
   }
 }

@@ -1,0 +1,26 @@
+
+×
+Fsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/Mapper.scala*A
+2com/thaj/scala/three/shapeless/typeclasses/Mapper#*Mapper€*O
+=com/thaj/scala/three/shapeless/typeclasses/Mapper#`<init>`(). €@*<init>€*?
+5com/thaj/scala/three/shapeless/typeclasses/Mapper#[A]	*A€*B
+6com/thaj/scala/three/shapeless/typeclasses/Mapper#Out#*Out€*F
+8com/thaj/scala/three/shapeless/typeclasses/Mapper#map(). *map€*E
+;com/thaj/scala/three/shapeless/typeclasses/Mapper#map().(f)*f€25
+' 2+com/thaj/scala/three/shapeless/typeclasses/2)
+ &com/thaj/scala/three/shapeless/2
+ com/thaj/scala/three/2
+ com/thaj/scala/2
+ 	com/thaj/2
+ com/2@
+ 2com/thaj/scala/three/shapeless/typeclasses/Mapper#2K
+ =com/thaj/scala/three/shapeless/typeclasses/Mapper#`<init>`().2C
+ 5com/thaj/scala/three/shapeless/typeclasses/Mapper#[A]2D
+ 
+6com/thaj/scala/three/shapeless/typeclasses/Mapper#Out#2F
+ 	8com/thaj/scala/three/shapeless/typeclasses/Mapper#map().2I
+
+ ;com/thaj/scala/three/shapeless/typeclasses/Mapper#map().(f)2C
+ 5com/thaj/scala/three/shapeless/typeclasses/Mapper#[A]2D
+ 6com/thaj/scala/three/shapeless/typeclasses/Mapper#Out#2D
+ 6com/thaj/scala/three/shapeless/typeclasses/Mapper#Out#PZ BA59D11CC5233FE0895A61D6D4295595

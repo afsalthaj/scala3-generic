@@ -1,3 +1,15 @@
+## Defining remove from tuples?
+
+How do we do that?
+
+Let's say Remover => an implicit proof.
+For a given type, prove this can be removed.
+In the process of proving it, do the actual removal.
+Obviosuly dependent output type - while it impose some restrictions such as it can't be used in computational computation,
+we are helping the compiler to stop searching around, and potentially helping out the users to stop messing around computing the type by themselves.
+Howver u get over this limitation using Aux type where it push the type back to the type parameter position.a
+
+
 ## Typeclass derivation in Scala3
 
 There are compiler primitives in Scala3.
