@@ -1,6 +1,0 @@
-{
-    "files.watcherExclude": {
-        "**/target": true
-    },
-    "metals.javaHome": "/nix/store/x03ly2c0c84gvr3wbrmrp07158wjazmn-zulu11.31.11-ca-jdk11.0.3"
-}

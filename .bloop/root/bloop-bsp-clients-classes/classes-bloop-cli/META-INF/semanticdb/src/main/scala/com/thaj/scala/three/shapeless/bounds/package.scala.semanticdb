@@ -1,36 +1,0 @@
-
-ÛBsrc/main/scala/com/thaj/scala/three/shapeless/bounds/package.scala*?
-.com/thaj/scala/three/shapeless/bounds/package. *bounds€*B
-4com/thaj/scala/three/shapeless/bounds/package.Bound#*Bound€*E
-9com/thaj/scala/three/shapeless/bounds/package.Bound#[Min]	*Min€*E
-9com/thaj/scala/three/shapeless/bounds/package.Bound#[Max]	*Max€*
-local0 €	*m€2)
- &com/thaj/scala/three/shapeless/2
- com/thaj/scala/three/2
- com/thaj/scala/2
- 	com/thaj/2
- com/2 
- scala/compiletime/2
- scala/2<
- .com/thaj/scala/three/shapeless/bounds/package.2B
- 4com/thaj/scala/three/shapeless/bounds/package.Bound#2G
- 9com/thaj/scala/three/shapeless/bounds/package.Bound#[Min]2
- 
-scala/Int#2G
- 9com/thaj/scala/three/shapeless/bounds/package.Bound#[Max]2
-  #
-scala/Int#2
-( +
-scala/Int#2G
-. 19com/thaj/scala/three/shapeless/bounds/package.Bound#[Max]2G
-	 9com/thaj/scala/three/shapeless/bounds/package.Bound#[Min]2G
- 9com/thaj/scala/three/shapeless/bounds/package.Bound#[Min]2*
-	 
-scala/compiletime/package.S#2
- local02
- 
-scala/`|`#2G
- 9com/thaj/scala/three/shapeless/bounds/package.Bound#[Max]2B
- 4com/thaj/scala/three/shapeless/bounds/package.Bound#2G
-  9com/thaj/scala/three/shapeless/bounds/package.Bound#[Min]2
-" #local0PZ 1CEA525F83AAE93098B0F43CC20ECCBA

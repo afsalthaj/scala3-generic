@@ -1,270 +1,0 @@
-
-ÄxFsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/Mapper.scala*K
-7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#*MapperBasic€*T
-Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic#`<init>`(). €@*<init>€*D
-:com/thaj/scala/three/shapeless/typeclasses/MapperBasic#[A]	*A€*G
-;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#*Out€*O
-?com/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply(). *apply€*L
-Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply().(a)*a€*M
-7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.
- *MapperBasic€*G
-;com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#*Aux€*H
->com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[A]	*A€*H
->com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[B]	*B€*
-local0*Out€*M
-?com/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().*apply€*L
-Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().[A]	*A€*P
-Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().(ev)  *ev€*T
-@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.emptyMap. è*emptyMap€*
-local1 *$anon€*
-local2*Out€*
-local3*apply€*
-local4*f€*_
-Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple(). (*nonEmptyTuple€*T
-Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]	*A€*T
-Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[B]	*B€*\
-Ncom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]	*Tail1€*V
-Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(C)  *C€*V
-Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(M)  *M€*
-local5 *$anon€*
-local6*Out€*
-local7*apply€*
-local8*a€*
-local9 €*x$1€*I
-<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#*Case€*Y
-Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#`<init>`(). €@*<init>€*I
-?com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#[A]	*A€*L
-@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#Out#*Out€*T
-Dcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#apply(). *apply€*Q
-Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#apply().(a)*a€*K
-<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.
- *Case€*L
-@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#*Aux€*M
-Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[A]	*A€*M
-Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[B]	*B€*
-local10*Out€*d
-Mcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().*createInstance€*Z
-Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]	*A€*Z
-Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[B]	*B€*Z
-Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().(f)*f€*
-local11 *$anon€*
-local12*Out€*
-local13*apply€*
-local14*a€*Y
-Ecom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().*mapElements€*R
-Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().[A]	*A€*Z
-Lcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(tuple)*tuple€*T
-Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(M)  *M€*e
-Ccom/thaj/scala/three/shapeless/typeclasses/ExampleMapperBasicBasic.
- *ExampleMapperBasicBasic€*^
-Kcom/thaj/scala/three/shapeless/typeclasses/ExampleMapperBasicBasic.example. €*example€*$
-local15 è*given_Aux_Int_Int€*
-local16*i€**
-local17 è*given_Aux_Double_Double€*
-local18*i€*
-local19 €*tuple€*
-local20 €*result€25
-' 2+com/thaj/scala/three/shapeless/typeclasses/2)
- &com/thaj/scala/three/shapeless/2
- com/thaj/scala/three/2
- com/thaj/scala/2
- 	com/thaj/2
- com/2E
-
-
- 7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2P
-
-
- Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic#`<init>`().2H
-
-
- :com/thaj/scala/three/shapeless/typeclasses/MapperBasic#[A]2I
- 
-;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2
- scala/Tuple#2M
- ?com/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply().2P
- Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply().(a)2H
- :com/thaj/scala/three/shapeless/typeclasses/MapperBasic#[A]2I
- ;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2E
- 7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.2I
-	 ;com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#2L
- >com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[A]2
- scala/Tuple#2L
- >com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[B]2E
- )7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2L
-* +>com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[A]2
-3 6local02L
-9 :>com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#[B]2M
- ?com/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().2P
- Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().[A]2
- scala/Tuple#2Q
-  "Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().(ev)2E
-$ /7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2P
-0 1Bcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().[A]2I
-A D;com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#2E
-5 @7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.2P
-E FBcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().[A]2I
-K N;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2Q
-H JCcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().(ev)2Q
-R TCcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.apply().(ev)2N
-
- @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.emptyMap.2I
-  #;com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#2E
- 7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.2-
-$ .scala/Tuple$package.EmptyTuple#2-
-0 :scala/Tuple$package.EmptyTuple#2E
-B M7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2-
-N Xscala/Tuple$package.EmptyTuple#2
- local22-
- scala/Tuple$package.EmptyTuple#2
-
- local32
- local42-
- scala/Tuple$package.EmptyTuple#2-
-  *scala/Tuple$package.EmptyTuple#2-
-- 7scala/Tuple$package.EmptyTuple.2U
- Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().2X
- Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]2X
- Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[B]2\
- $Ncom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]2
-( -scala/Tuple#2X
-5 6Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(C)2N
-= @@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#2J
-8 <<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2X
-A BJcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]2X
-D EJcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[B]2X
-H IJcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(M)2E
-K V7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2\
-W \Ncom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]2I
-l o;com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Aux#2E
-` k7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.2
-r tscala/`*:`#2X
-p qJcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]2\
-u zNcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]2
-	~ €scala/`*:`#2X
-| }Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[B]2K
-
-ƒ †;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2Z
-
- ‚Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(M)2G
-
-Ž ™7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2
-
-œ žscala/`*:`#2Z
-
-š ›Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]2^
-
-Ÿ ¤Ncom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]2
- local62
- scala/`*:`#2X
- Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[B]2I
- ;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2X
- Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(M)2
-
- local72
- local82
- scala/`*:`#2X
- Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[A]2\
- Ncom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().[Tail1]2!
-C Cscala/Tuple#`*:`().2M
-6 ;?com/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply().2X
-4 5Jcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().(M)2)
-> Bscala/NonEmptyTuple#tail().2
-< =local82
-( (local92J
-
- <com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#2U
- Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#`<init>`().2M
- ?com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#[A]2N
- @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#Out#2R
-
- Dcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#apply().2U
- Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#apply().(a)2M
- ?com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#[A]2N
- @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#Out#2J
-"" <com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2N
-## @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#2Q
-## Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[A]2Q
-## Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[B]2J
-## <com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#2Q
-## Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[A]2
-#&# )local102Q
-#,# -Ccom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#[B]2[
-%
-% Mcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().2^
-%% Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]2^
-%% Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[B]2^
-%%  Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().(f)2^
-%"% #Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]2^
-%'% (Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[B]2N
-%0% 3@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#2J
-%+% /<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2^
-%4% 5Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]2^
-%7% 8Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[B]2J
-%@% D<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case#2^
-%E% FPcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]2
-&& local122^
-&& Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[B]2
-'' local132
-'' local142^
-'' Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().[A]2&
-'' scala/Function1#apply().2^
-'' Pcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().(f)2
-'' local142S
--- Ecom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().2V
-++ Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().[A]2
-++ scala/Tuple#2Z
-++ Lcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(tuple)2V
-+!+ "Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().[A]2V
--- Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(M)2E
--!- ,7com/thaj/scala/three/shapeless/typeclasses/MapperBasic#2V
---- .Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().[A]2I
--4- 7;com/thaj/scala/three/shapeless/typeclasses/MapperBasic#Out#2V
--2- 3Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(M)2M
--=- B?com/thaj/scala/three/shapeless/typeclasses/MapperBasic#apply().2V
--;- <Hcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(M)2Z
--C- HLcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().(tuple)2Q
-11 Ccom/thaj/scala/three/shapeless/typeclasses/ExampleMapperBasicBasic.2
-1'1 *
-scala/App#2E
-22 7com/thaj/scala/three/shapeless/typeclasses/MapperBasic.2Y
-44 Kcom/thaj/scala/three/shapeless/typeclasses/ExampleMapperBasicBasic.example.2
-55 !local152N
-55 @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#2J
-55 <com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2
-55 
-scala/Int#2
-55 !
-scala/Int#2[
-5*5 8Mcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().2J
-5%5 )<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2
-595 :local162 
-5@5 Ascala/Int#`*`(+3).2
-5>5 ?local162
-5B5 Clocal162
-66 'local172N
-66 @com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.Aux#2J
-66 <com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2
-66 scala/Double#2
-6!6 'scala/Double#2[
-606 >Mcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.createInstance().2J
-6+6 /<com/thaj/scala/three/shapeless/typeclasses/MapperBasic.Case.2
-6?6 @local182#
-6F6 Gscala/Double#`*`(+6).2
-6D6 Elocal182
-6H6 Ilocal182
-77 local192#
-77 scala/Tuple2.apply().2
-88 local202
-88 
-scala/Int#2
-88 "scala/Double#2S
-8&8 &Ecom/thaj/scala/three/shapeless/typeclasses/MapperBasic.mapElements().2
-8&8 +local192U
-878 7Gcom/thaj/scala/three/shapeless/typeclasses/MapperBasic.nonEmptyTuple().2
-878 7local152
-878 7local172N
-878 7@com/thaj/scala/three/shapeless/typeclasses/MapperBasic.emptyMap.2'
-9
-9 scala/Predef.println(+1).2
-99 local20PZ D04B7D2A2B892B85C1B635A56DDBC71E

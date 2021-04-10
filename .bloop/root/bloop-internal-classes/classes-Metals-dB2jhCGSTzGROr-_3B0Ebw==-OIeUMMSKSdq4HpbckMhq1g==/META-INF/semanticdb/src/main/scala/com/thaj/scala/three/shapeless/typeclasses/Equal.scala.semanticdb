@@ -1,227 +1,0 @@
-
-¤qEsrc/main/scala/com/thaj/scala/three/shapeless/typeclasses/Equal.scala*?
-1com/thaj/scala/three/shapeless/typeclasses/Equal#*Equal€*N
-<com/thaj/scala/three/shapeless/typeclasses/Equal#`<init>`(). €@*<init>€*>
-4com/thaj/scala/three/shapeless/typeclasses/Equal#[A]	*A€*C
-6com/thaj/scala/three/shapeless/typeclasses/Equal#eq(). *eq€*C
-9com/thaj/scala/three/shapeless/typeclasses/Equal#eq().(a)*a€*C
-9com/thaj/scala/three/shapeless/typeclasses/Equal#eq().(b)*b€*A
-1com/thaj/scala/three/shapeless/typeclasses/Equal.
- *Equal€*G
-9com/thaj/scala/three/shapeless/typeclasses/Equal.apply().*apply€*F
-<com/thaj/scala/three/shapeless/typeclasses/Equal.apply().[A]	*A€*J
-=com/thaj/scala/three/shapeless/typeclasses/Equal.apply().(ev)  *ev€*Y
->com/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#*PrimitiveInstances€*[
-Icom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#`<init>`(). €@*<init>€*n
-Qcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.
- (*given_Equal_String€*a
-Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().*eq€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().(a)*a€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().(b)*b€*h
-Ncom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.
- (*given_Equal_Int€*^
-Scom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().*eq€*`
-Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().(a)*a€*`
-Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().(b)*b€*n
-Qcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.
- (*given_Equal_Double€*a
-Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().*eq€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().(a)*a€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().(b)*b€*Q
-:com/thaj/scala/three/shapeless/typeclasses/TupleInstances#*TupleInstances€*W
-Ecom/thaj/scala/three/shapeless/typeclasses/TupleInstances#`<init>`(). €@*<init>€*r
-Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.
- (*given_Equal_EmptyTuple€*a
-Vcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().*eq€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().(a)*a€*c
-Ycom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().(b)*b€*j
-Ncom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple(). (*eqInstanceOfTuple€*[
-Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]	*A€*[
-Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]	*T€*_
-Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A1)  *A1€*_
-Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A2)  *A2€*
-local0 *$anon€*
-local1*eq€*
-local2*a€*
-local3*b€*
-local4 €*h€*
-local5 €*t€*
-local6 €*h1€*
-local7 €*t1€*U
-<com/thaj/scala/three/shapeless/typeclasses/ProductInstances#*ProductInstances€*Y
-Gcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#`<init>`(). €@*<init>€*p
-Rcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct(). (*eqInstanceOfProduct€*_
-Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]	*A€*e
-Xcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[Repr]	*Repr€*a
-Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(G)  *G€*k
-Zcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(ReprEq)  *ReprEq€*
-local8 *$anon€*
-local9*eq€*
-local10*a€*
-local11*b€25
-' 2+com/thaj/scala/three/shapeless/typeclasses/2)
- &com/thaj/scala/three/shapeless/2
- com/thaj/scala/three/2
- com/thaj/scala/2
- 	com/thaj/2
- com/25
-& -'com/thaj/scala/three/shapeless/Generic.25
-& -'com/thaj/scala/three/shapeless/Generic#2-
- %com/thaj/scala/three/shapeless/2#
- com/thaj/scala/three/2
- com/thaj/scala/2
- 	com/thaj/2
- 
-com/2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal#2J
- <com/thaj/scala/three/shapeless/typeclasses/Equal#`<init>`().2B
- 4com/thaj/scala/three/shapeless/typeclasses/Equal#[A]2D
- 6com/thaj/scala/three/shapeless/typeclasses/Equal#eq().2G
-	 
-9com/thaj/scala/three/shapeless/typeclasses/Equal#eq().(a)2B
- 4com/thaj/scala/three/shapeless/typeclasses/Equal#[A]2G
- 9com/thaj/scala/three/shapeless/typeclasses/Equal#eq().(b)2B
- 4com/thaj/scala/three/shapeless/typeclasses/Equal#[A]2
- scala/Boolean#2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal.2L
- '>com/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#2H
-- ;:com/thaj/scala/three/shapeless/typeclasses/TupleInstances#2J
-A Q<com/thaj/scala/three/shapeless/typeclasses/ProductInstances#2G
-		 9com/thaj/scala/three/shapeless/typeclasses/Equal.apply().2J
-		 <com/thaj/scala/three/shapeless/typeclasses/Equal.apply().[A]2K
-		 =com/thaj/scala/three/shapeless/typeclasses/Equal.apply().(ev)2?
-		 1com/thaj/scala/three/shapeless/typeclasses/Equal#2J
-		  <com/thaj/scala/three/shapeless/typeclasses/Equal.apply().[A]2?
-	$	 )1com/thaj/scala/three/shapeless/typeclasses/Equal#2J
-	*	 +<com/thaj/scala/three/shapeless/typeclasses/Equal.apply().[A]2K
-	/	 1=com/thaj/scala/three/shapeless/typeclasses/Equal.apply().(ev)2L
- >com/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#2W
- Icom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#`<init>`().2_
- Qcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal#2"
- scala/Predef.String#2d
- Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().2g
- Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().(a)2"
- scala/Predef.String#2g
-  Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_String.eq().(b)2"
-" (scala/Predef.String#2
-+ 2scala/Boolean#2\
- Ncom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal#2
- 
-scala/Int#2a
- Scom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().2d
- Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().(a)2
- 
-scala/Int#2d
- Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Int.eq().(b)2
- "
-scala/Int#2
-% ,scala/Boolean#2_
- Qcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal#2
- scala/Double#2d
- Vcom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().2g
- Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().(a)2
- scala/Double#2g
-  Ycom/thaj/scala/three/shapeless/typeclasses/PrimitiveInstances#given_Equal_Double.eq().(b)2
-" (scala/Double#2
-+ 2scala/Boolean#2H
- :com/thaj/scala/three/shapeless/typeclasses/TupleInstances#2S
- Ecom/thaj/scala/three/shapeless/typeclasses/TupleInstances#`<init>`().2_
- Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.2?
- 1com/thaj/scala/three/shapeless/typeclasses/Equal#2-
- scala/Tuple$package.EmptyTuple#2d
- Vcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().2g
- Ycom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().(a)2-
- !scala/Tuple$package.EmptyTuple#2g
-# $Ycom/thaj/scala/three/shapeless/typeclasses/TupleInstances#given_Equal_EmptyTuple.eq().(b)2-
-& 0scala/Tuple$package.EmptyTuple#2
-3 :scala/Boolean#2\
-   Ncom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().2_
-   Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2_
-   Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2
- "  'scala/Tuple#2`
- /  1Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A1)2?
- 3  81com/thaj/scala/three/shapeless/typeclasses/Equal#2_
- 9  :Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2`
- =  ?Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A2)2?
- A  F1com/thaj/scala/three/shapeless/typeclasses/Equal#2_
- G  HQcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2?
- L  Q1com/thaj/scala/three/shapeless/typeclasses/Equal#2
- T  Vscala/`*:`#2_
- R  SQcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2_
- W  XQcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2?
- `  e1com/thaj/scala/three/shapeless/typeclasses/Equal#2
- h  jscala/`*:`#2_
- f  gQcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2_
- k  lQcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2
-!! local12
-!! local22
-!! scala/`*:`#2_
-!! Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2_
-!! Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2
-!!  local32
-!$! &scala/`*:`#2_
-!"! #Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2_
-!'! (Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2
-!+! 2scala/Boolean#2#
-!6! 6scala/Tuple2.apply().2
-!6! 7local22
-!9! :local32%
-"" scala/Tuple2.unapply().2#
-"" scala/`*:`.unapply().2
-"" scala/`*:`.2
-"" local42
-"" local52#
-"" scala/`*:`.unapply().2
-"" scala/`*:`.2
-"" local62
-"" local72#
-## scala/Boolean#`&&`().2D
-## 6com/thaj/scala/three/shapeless/typeclasses/Equal#eq().2G
-## 9com/thaj/scala/three/shapeless/typeclasses/Equal.apply().2?
-## 1com/thaj/scala/three/shapeless/typeclasses/Equal.2_
-## Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[A]2`
-## Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A1)2
-## local42
-## local62D
-#'# )6com/thaj/scala/three/shapeless/typeclasses/Equal#eq().2G
-### #9com/thaj/scala/three/shapeless/typeclasses/Equal.apply().2?
-## #1com/thaj/scala/three/shapeless/typeclasses/Equal.2_
-#$# %Qcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().[T]2`
-#&# &Rcom/thaj/scala/three/shapeless/typeclasses/TupleInstances#eqInstanceOfTuple().(A2)2
-#*# +local52
-#-# /local72J
-(( <com/thaj/scala/three/shapeless/typeclasses/ProductInstances#2U
-)) Gcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#`<init>`().2`
-)) Rcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().2c
-)) Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2f
-)) #Xcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[Repr]2
-)') ,scala/Tuple#2c
-)4) 5Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(G)29
-)?) B+com/thaj/scala/three/shapeless/Generic.Aux#25
-)7) >'com/thaj/scala/three/shapeless/Generic.2c
-)C) DUcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2f
-)F) JXcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[Repr]2h
-)M) SZcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(ReprEq)2?
-)U) Z1com/thaj/scala/three/shapeless/typeclasses/Equal#2f
-)[) _Xcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[Repr]2?
-)c) h1com/thaj/scala/three/shapeless/typeclasses/Equal#2c
-)i) jUcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2?
-)r) w1com/thaj/scala/three/shapeless/typeclasses/Equal#2c
-)x) yUcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2
-** local92
-** local102c
-** Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2
-** local112c
-** Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().[A]2
-*!* (scala/Boolean#2D
-++ 6com/thaj/scala/three/shapeless/typeclasses/Equal#eq().2h
-++ Zcom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(ReprEq)2:
-++ ,com/thaj/scala/three/shapeless/Generic#to().2c
-++ Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(G)2
-++ local102:
-++ ,com/thaj/scala/three/shapeless/Generic#to().2c
-++ Ucom/thaj/scala/three/shapeless/typeclasses/ProductInstances#eqInstanceOfProduct().(G)2
-++ local11PZ EB18479BAF46B947C21B21410F6CBB84
