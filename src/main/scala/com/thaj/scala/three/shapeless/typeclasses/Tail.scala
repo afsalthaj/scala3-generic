@@ -18,5 +18,4 @@ object Tail {
     type Out = TupleTypes.Tail[A]
     def tail(a: A): TupleTypes.Tail[A] = tailOf(a)
   }
-
 }

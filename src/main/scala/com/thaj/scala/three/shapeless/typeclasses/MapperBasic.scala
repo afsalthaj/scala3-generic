@@ -47,14 +47,3 @@ object MapperBasic {
     }
 }
 
-object ExampleMapperBasicBasic extends App {
-    import MapperBasic._
-
-        val example = {
-          given Case.Aux[Int, Int] = Case.createInstance(i => i * i)
-          given Case.Aux[Double, Double] = Case.createInstance(i => i * i)
-          val tuple = (2, 4.0)
-          val result: (Int, Double) = tuple.mapElements
-          println(result)
-    }
-}

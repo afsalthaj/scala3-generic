@@ -1,9 +1,14 @@
-## sbt project compiled with Dotty
+## Type Computation, Type Class Derivation, Generic Programming, Extension methods, Polymorphic function types in Scala 3
 
 ### Usage
 
-This is a normal sbt project, you can compile code with `sbt compile` and run it
-with `sbt run`, `sbt console` will start a Dotty REPL.
+```scala
+nix-shell
+bloop server // once off
+sbt bloopInstall // once off
+bloop compile root
+bloop test root
+```
 
-For more information on the sbt-dotty plugin, see the
-[dotty-example-project](https://github.com/lampepfl/dotty-example-project/blob/master/README.md).
+Use with VScode for better experience.
+Make sure pass JAVA_HOME of your nix in VSCode, and import "Metals" from marketplace. 
