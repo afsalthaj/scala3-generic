@@ -3,7 +3,7 @@ import org.junit.Test
 import org.junit.Assert._
 import com.thaj.scala.three.shapeless.ops.tuple._
 import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.typeclasses.{Equal, Head, Second, MapperBasic, Mapper}
+import com.thaj.scala.three.shapeless.typeclasses.{Equal, Head, Second, MapperBasic, Mapper, Case, MapperF}
 
 import scala.deriving._
 
@@ -69,17 +69,32 @@ class TestShapeless {
      
   }
 
-  @Test def testMapperBasic() = {
+  @Test def testMapper() = {
     import Mapper._
 
     object Poly {
-        given Mapper.Case.Aux[this.type, Int, Int] = Mapper.Case.createInstance(i => i * i)
-        given Mapper.Case.Aux[this.type, Double, Double] = Mapper.Case.createInstance(i => i * i)
+        given Case.Aux[this.type, Int, Int] = Case.createInstance(i => i * i)
+        given Case.Aux[this.type, Double, Double] = Case.createInstance(i => i * i)
     }
 
     val tuple = (2, 4.0)
     val result: (Int, Double) = tuple.mapElements(Poly)
 
     assertEquals(result, (4, 16.0))
+  }
+
+  @Test def testMapperF() = {
+    import MapperF._
+
+    object Poly {
+        given Case.Aux[this.type, Int, Option[Int]] = Case.createInstance(i => if (i < 10) None else Some(i))
+        given Case.Aux[this.type, Double, Option[Double]] = Case.createInstance(i => if (i > 100) None else Some(i))
+    }
+
+    val tuple = (20, 50.1)
+    
+    val result: Option[(Int, Double)] = tuple.traverse(Poly)
+
+    assertEquals(result, Some((20, 50.1)))
   }
 }

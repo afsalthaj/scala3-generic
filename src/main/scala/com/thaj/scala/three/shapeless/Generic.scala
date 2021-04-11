@@ -27,4 +27,3 @@ object Generic {
     override def from(a: P.MirroredElemTypes) = P.fromProduct(a)
   }
 }
-import com.thaj.scala.three.macros.Macros

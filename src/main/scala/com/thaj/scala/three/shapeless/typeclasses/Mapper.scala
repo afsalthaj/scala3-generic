@@ -1,5 +1,6 @@
 package com.thaj.scala.three.shapeless.typeclasses
 
+import com.thaj.scala.three.shapeless.TupleTypes.{TupleInverseMap, TupleMap}
 /**
  * A better implementation of MapperBasic, where
  * now users have control over the list of cases that can be used to map over the tuple.
@@ -25,20 +26,6 @@ object Mapper {
       def apply(a: A *: Tail1) = C.apply(a.head) *: M.apply(a.tail)
     }
 
-    trait Case[P, A] {
-      type Out
-      def apply(a: A): Out
-    }
-
-    object Case {
-      type Aux[P, A, B] = Case[P, A] { type Out = B }
-
-      def createInstance[P, A, B](f: A => B): Case.Aux[P, A, B] = new Case[P, A]{
-        type Out = B
-        def apply(a: A) = f(a)
-     }
-   }
-
     extension[A <: Tuple](tuple: A) {
         // Users should be able to pass the right set of cases to mapper.
         // Say these cases are embedded in a type P. Now an instance of mapper
@@ -48,4 +35,18 @@ object Mapper {
         // In real shapeless, this P is of the type `Poly`
         def mapElements[P](p: P)(using M: Mapper[P, A]): M.Out  = M.apply(tuple)
     }
+}
+
+trait Case[P, A] {
+  type Out
+  def apply(a: A): Out
+}
+
+object Case {
+  type Aux[P, A, B] = Case[P, A] { type Out = B }
+
+  def createInstance[P, A, B](f: A => B): Case.Aux[P, A, B] = new Case[P, A]{
+    type Out = B
+    def apply(a: A) = f(a)
+  }
 }

@@ -1,3 +1,23 @@
+---
+marp : true
+---
+
+## Scala3 - a sneak peak and a bit of macros
+
+
+---
+## By the end of the talk, we learn
+1. Type computation, a few examples, Tuple wrap/unwrap, bounds etc
+2. Polymorphic function types. Rank N in Scala language.
+3. A scala2 style typeclass derivation with Scala3 tuples.
+4. A few questions to listeners.
+5. Mirror - A compiler primitive.
+6. Inline - a couple of examples.
+7. Type class derivation - A scala3 style :( :/ :)
+8. Scala3 Macros. Basics, and more.
+
+---
+
 ## Why Macros?
 
 Macros are used to reduce duplication across constructs 
@@ -8,6 +28,8 @@ There are - loss of typesafety or loss of performance.
 
 Value based mechanism are not always the answer for refactoring - sometimes
 it can lead to typesafety pbms and performance issues.
+
+---
 
 ## Take an example
 
@@ -20,6 +42,8 @@ def log(line: => String): Unit =
 // Also used in parsing libraries - fastParse in scala2.
 
 ```
+
+---
 
 ## Lisp has powerful metaprogrammign capabilities
 

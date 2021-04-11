@@ -6,7 +6,7 @@ object TupleTypes {
     case h *: t => F[h] *: TupleMap[t, F]
   }
 
-  type TupleInverseMap[T, F[_]] = T match {
+  type TupleInverseMap[T, F[_]] <: Tuple = T match {
     case EmptyTuple => EmptyTuple
     case F[h] *: t => h *: TupleInverseMap[t, F]
   }
