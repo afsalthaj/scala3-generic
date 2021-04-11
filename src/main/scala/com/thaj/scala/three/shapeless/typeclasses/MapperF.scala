@@ -14,7 +14,7 @@ object MapperF {
     def apply(f: EmptyTuple): F[EmptyTuple] = M.pure(EmptyTuple)
   }
 
-  given  nonEmptyTuple[F[_], A, P,  B, Tail1 <: Tuple](
+  given  nonEmptyTuple[F[_], A, P, B, Tail1 <: Tuple](
     using C: Case.Aux[P, A, F[B]], 
     M: MapperF[F, P, Tail1]
   )(using MF: Monad[F]): MapperF.Aux[F, P, A *: Tail1, B *: M.Out] = new MapperF[F, P, A *: Tail1] {

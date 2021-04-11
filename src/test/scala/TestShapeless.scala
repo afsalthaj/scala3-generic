@@ -87,12 +87,12 @@ class TestShapeless {
     import MapperF._
 
     object Poly {
-        given Case.Aux[this.type, Int, Option[Int]] = Case.createInstance(i => if (i < 10) None else Some(i))
-        given Case.Aux[this.type, Double, Option[Double]] = Case.createInstance(i => if (i > 100) None else Some(i))
+      given Case.Aux[this.type, Int, Option[Int]] = Case.createInstance(i => if (i < 10) None else Some(i))
+      given Case.Aux[this.type, Double, Option[Double]] = Case.createInstance(i => if (i > 100) None else Some(i))
     }
 
     val tuple = (20, 50.1)
-    
+
     val result: Option[(Int, Double)] = tuple.traverse(Poly)
 
     assertEquals(result, Some((20, 50.1)))
