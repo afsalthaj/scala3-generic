@@ -1,4 +1,12 @@
-## Type Computation, Type Class Derivation, Generic Programming, Extension methods, Polymorphic function types in Scala 3
+## Scala3 Stuff!
+
+* Type Computation (bounds, tuplemap, tuple-inverse-map)
+* Type Class Derivation (A scala2 style scala3 typeclass derivation)
+* Poly in Scala3 (A scala2 style poly with scala3 tuples)
+* Extension methods (in different examples)
+* Polymorphic function types (tuple map)
+* Inline-transparent (compile time smart constructors)
+* macros (expr, quoting and slicing)
 
 ### Usage
 
