@@ -1,4 +1,4 @@
-package com.thaj.scala.three.shapeless.macros
+package com.thaj.scala.three.macros
 
 import scala.quoted._
 
@@ -11,5 +11,22 @@ import scala.quoted._
 // Expr (remember this is unlike quoting) such that at compile time u get the evaluated result of expression (ex: String)
 // and obviously if you are referring this elsewhere u have to splice it further. 
 object Macros {
+    inline def assert(expr: Boolean): Unit = 
+      ${assertImpl('{expr})}
 
+    def assertImpl(expr: Expr[Boolean])(using Quotes): Expr[Any] = '{
+       val result = ${expr}
+       val render = ${Expr(expr.show)}
+
+       if (!result) throw new AssertionError(s"Failed insertion. ${render}")
+    }
+
+    // inspect(expr.toString) will not
+    inline def inspect(inline x: Any): Any = ${ printAnyExpr('x) }
+
+    def printAnyExpr[A](expr: Expr[A])(using Quotes): Expr[Any] = {
+       val string = expr.show
+       if (string.contains("toString")) scala.sys.error("Cannot call toString in your expressions")
+       expr
+    }
 }
