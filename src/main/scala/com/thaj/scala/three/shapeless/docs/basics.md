@@ -1,3 +1,95 @@
+## Why Macros?
+
+Macros are used to reduce duplication across constructs 
+of the language, that are not ameanable to value based refactoring techniques.
+(such as introducing varibale, function etc).
+
+There are - loss of typesafety or loss of performance.
+
+Value based mechanism are not always the answer for refactoring - sometimes
+it can lead to typesafety pbms and performance issues.
+
+## Take an example
+
+
+```scala
+// any attempt to abstract over this can reduce performance - massive performance penalty
+def log(line: => String): Unit = 
+ if (LoggingEnabled) println(line)
+
+// Also used in parsing libraries - fastParse in scala2.
+
+```
+
+## Lisp has powerful metaprogrammign capabilities
+
+Example: Clojure is homoiconic language.
+
+## Macros - CodeGen at compile time. Writing code that generates code
+
+Thats the reason.
+
+## Inline
+
+// If not, inline invoking is through a generated `getter` in parent object
+```scala
+inline val LoggingEnabled = false
+```
+
+The above provides guaranteed inlining. Whatever that is on the right side,
+will be copy pasted into th callsite.
+
+## Inline
+
+```scala
+
+inline val LoggingEnabled = false
+
+def log(line :=> String): Unit = 
+ if (LoggingEnabled) println(line)
+ // if (false) println(line)
+ // and then just to unit , if LoggingEnabled is false (if values are known to be true or false)
+ // Is that it? Not really.
+ // 
+
+```
+
+```scala
+
+inline def log(line: => String): Unit = ???
+
+// That way, the alloocation to line is also gone away.
+
+```
+
+In Scala3, values are known to be boolean scala3
+
+How many allocations are involved in executing a call to log?
+1 allocation through byname parameters. Function0, to stuff this String - lazily.
+1 call to getter of LoggingEnabled. which is then called to Jvm function __getField as well.
+
+
+## Inline function can be recursive
+
+```scala
+inline def pow(num: Float, exp: Int): Float = 
+ if(exp == 0) 1.0F else num * pow(num, exp - 1)
+
+pow(10.5F, 3) // Large amount of code thats known at compile time.
+
+pow(10.5F, 100) // Too much of code generation - that's going to bring a compile time error
+
+```
+
+## Inline + Transparent
+```scala
+// Tranbsparent allows the compiler to see through the types
+// early if its able to resolve the branches at compile time
+transparent inline def apply(v: Int): Any = 
+  inline if (v >= 0) new Natural(v) else error("Not a natural number")
+
+```
+
 ## Defining remove from tuples?
 
 How do we do that?
