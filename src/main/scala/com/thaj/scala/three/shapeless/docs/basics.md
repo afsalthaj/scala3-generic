@@ -88,21 +88,33 @@ pow(10.5F, 100) // Too much of code generation - that's going to bring a compile
 transparent inline def apply(v: Int): Any = 
   inline if (v >= 0) new Natural(v) else error("Not a natural number")
 
+// Demo  
+
 ```
 
-## Defining remove from tuples?
+## Compile time computation
 
-How do we do that?
+import scala.compiletime._
+Singleton type functionality.
 
-Let's say Remover => an implicit proof.
-For a given type, prove this can be removed.
-In the process of proving it, do the actual removal.
-Obviosuly dependent output type - while it impose some restrictions such as it can't be used in computational computation,
-we are helping the compiler to stop searching around, and potentially helping out the users to stop messing around computing the type by themselves.
-Howver u get over this limitation using Aux type where it push the type back to the type parameter position.a
+```scala
+val something: false = false
+val foo: "Foo" = "Foo"
+val boo: "Boo" = "Foo" // is wrong
+// false is a subtype of Boolean
+// All inlines need to be of singleton types.
+```
 
+// Show Bound example
 
-## Typeclass derivation in Scala3
+```scala
+def succ[N <: Int]: Int = ???
+```
+
+## Scala3 style of typeclass derivation using inline.
+Copy from John's implementation. For Show - but I personally feel its limited (using Mirror, derives, caching etc)
+
+## Typeclass derivation in Scala2 using Scala3 tuples
 
 There are compiler primitives in Scala3.
 
@@ -268,4 +280,70 @@ type ProductGeneric[T[_]] {
 and supports * -> * -> *
 // better compile time performance. and bytecode footproint
 // Captures common folds - Eliminates the induction boilerplate for "monoidal" type classes
+``` 
+
+## Scala3 Macros
+Scala2 is so powerful - create code that has non-sensible types.
+Scala3 macros is always strongly typed - the meaning of that code doesn't change through macros. 
+It doesn't allow you to change the semantics of macros
+These limitations are sensible. It doesn't change the  meaning of code. Reduction in the code.
+
+You see `inline` the possiblity that right side is end up being a macro.
+Macro is a fusion of `inline`, and the second feature?
+
+The feature is called quotation and splicing.
+The new syntax for them is. ${} meaning quotation. ' sign is called quotation.
+$ is splicing.
+
+What is quotation?
+After parsing, raw text -> AST. Template declaration, and then declaration and so on and so forth.
+This is in terms of the algebraic data type in the brain of scala compiler.
+We can peek into this brain at the context of a scala3 macro, at compile time.
+
+def assertV(expor: Boolean): Unit = ???
+def assert(expr: Boolean): Unit = ??? // the code behind the boolean expression.
+We don't want access to Boolean value at runtime. But whatever code that is being utilised 
+to generate the boolean value.
+
+assertV(1 > 0)
+At runtime, this will produce a value of true.
+
+But if we need to perform operations at compile time, that's what quotation is all about.
+To access this code, quote it.!!!!
+
+import scala.quoted._
+
+Macros are evaluated at compile time --> inline
+Expr[Boolean] === a model of a scala expression that produces a boolean variable.
+
+Expr[Boolean] exists at compile time
+
+// Feed in scala code and returns scala code
+def assertImpl(expr: Expr[Boolean])(using Quotes): Expr[Any] = '{
+    // inside a quotation we are splicing it.
+  val evaluate: Boolean = $expr // evaluate the boolean variable
+  val render: String = ${Expr(expr.show)} // Discuss why couldn't you do val render = expr.shows
+
+  if (!evaluate) throw new AssertionError(s"Failed assertion: ${render}")
+
+}'
+
+Splicing is the inverse of quotation. It takes an Expr[A]
+and turns it into a value of type `A`. This is the speciality of scala3 macros.
+Its not any Expr[Any] as in Scala2.
+
+```scala
+inline def assert(inline expr: Boolean): Unit = 
+  ${assertImpl('{expr})}
+
+// Easier to model these in our mind
+// ${expr: Expr[A]} : A
+// '{expr: A}: Expr[A]
+// splice(quote(a)): A
+// quote(splice(expr)): Expr[A]
+// More or less alebraic laws that governs the behaviour of splice and quotes.
+// quote (alwaysAnA)
+// splice(alwaysAnExpr)
+
 ```
+
