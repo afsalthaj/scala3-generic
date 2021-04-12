@@ -13,13 +13,7 @@ trait Generic[A] {
 object Generic {
   type Aux[A, B] = Generic[A] {type Repr = B}
 
-  def apply[A](implicit ev: Generic[A]): Aux[A, ev.Repr] = ev
-
-  // given genericOfTuple[H, Tail <: Tuple, A <: H *: Tail]: Generic.Aux[A, H *: Tail] = new Generic[A] {
-  //   override type Repr = H *: Tail
-  //   override def to(a: A): H *: Tail = a
-  //   override def from(a: H *: Tail): A = a.head *: a.tail
-  // }
+  //def apply[A](implicit ev: Generic[A]): Aux[A, ev.Repr] = ev
 
   given genericOfA[A <: Product](using P: Mirror.ProductOf[A]): Generic.Aux[A, P.MirroredElemTypes] = new Generic[A] {
     override type Repr =  P.MirroredElemTypes

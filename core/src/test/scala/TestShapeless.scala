@@ -27,7 +27,7 @@ class TestShapeless {
     final case class A(a: String, b: Int, c: Double)
 
     val string: (String, Int, Double) =
-      Generic[A].to(A("afsal", 1, 1.0))
+      summon[Generic[A]].to(A("afsal", 1, 1.0))
   
     assertEquals(string, ("afsal", 1, 1.0))
   }
