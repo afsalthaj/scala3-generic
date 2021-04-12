@@ -135,6 +135,44 @@ val boo: "Boo" = "Foo" // is wrong
 def succ[N <: Int]: Int = ???
 ```
 
+## Scala3 Macros -> Switch to Impl based on implicit availability
+
+```scala
+// Taken from Scala docs
+import scala.collection.immutable.{ TreeSet, HashSet }
+inline def setFor[T]: Set[T] = ${ setForExpr[T] }
+
+def setForExpr[T: Type](using Quotes): Expr[Set[T]] =
+   Expr.summon[Ordering[T]] match
+      case Some(ord) => '{ new TreeSet[T]()($ord) }
+      case _ => '{ new HashSet[T] }
+
+```
+
+
+## Relationship with transparent Inline
+
+```scala
+
+// Taken from scala docs
+transparent inline def defaultOf(inline str: String) =
+   ${ defaultOfImpl('str) }
+
+def defaultOfImpl(strExpr: Expr[String])(using Quotes): Expr[Any] =
+   strExpr.valueOrError match
+      case "int" => '{1}
+      case "string" => '{"a"}
+
+  // in a separate file
+  val a: Int = defaultOf("int")
+  val b: String = defaultOf("string")
+```
+
+## Optimising Expressions (where the dsl is not built by you)
+Refer to scala code examples.
+
+## NonEmpty String (Basic -> Advanced)
+
 ## Scala3 style of typeclass derivation using inline.
 Copy from John's implementation. For Show - but I personally feel its limited (using Mirror, derives, caching etc)
 
