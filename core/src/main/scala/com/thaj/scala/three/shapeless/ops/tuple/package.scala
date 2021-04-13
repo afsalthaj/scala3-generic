@@ -3,6 +3,8 @@ package com.thaj.scala.three.shapeless.ops
 import com.thaj.scala.three.shapeless.TupleTypes.{Head, Second, TupleInverseMap, TupleMap, Tail}
 import com.thaj.scala.three.shapeless.Generic
 import com.thaj.scala.three.shapeless.typeclasses
+import com.thaj.scala.three.shapeless.typeclasses.Case
+import com.thaj.scala.three.shapeless.typeclasses.Monad
 
 package object tuple {
   import Generic._
@@ -11,6 +13,10 @@ package object tuple {
     val tupleUnwrapped: Array[Any] = x.productIterator.collect { case Some(v) => v }.toArray
     if x.productArity == tupleUnwrapped.length then Some(Tuple.fromArray(tupleUnwrapped).asInstanceOf[TupleInverseMap[T, Option]]) else None
   }
+
+
+  //  def sequence[A, T <: Tuple, F[_]](t: TupleMap[T, F])(using MF: Monad[F]): F[TupleInverseMap[A, F]] = 
+  //     t.traverse[F].apply[identityTupleF.type, T](identityTupleF)
 
   def headOf[T <: Tuple](c: T): Head[T] = {
     c.productIterator.toList.head.asInstanceOf[Head[T]]

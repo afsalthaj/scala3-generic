@@ -83,18 +83,38 @@ class TestShapeless {
     assertEquals(result, (4, 16.0))
   }
 
-  @Test def testMapperF() = {
+  @Test def testTraverse() = {
     import MapperF._
 
-    object Poly {
-      given Case.Aux[this.type, Int, Option[Int]] = Case.createInstance(i => if (i < 10) None else Some(i))
-      given Case.Aux[this.type, Double, Option[Double]] = Case.createInstance(i => if (i > 100) None else Some(i))
+    object optional {
+      given Case.Aux[this.type, Int, Option[Int]] = 
+        Case.createInstance(i => if (i < 10) None else Some(i))
+
+      given Case.Aux[this.type, Double, Option[Double]] = 
+        Case.createInstance(i => if (i > 100) None else Some(i))
     }
 
     val tuple = (20, 50.1)
 
-    val result: Option[(Int, Double)] = tuple.traverse(Poly)
+    assertEquals(tuple.traverse(optional), Some((20, 50.1)))
+  }
 
+  @Test def traverseIdentitySequence() = {
+    import MapperF._
+
+    // Based on the idea that sequence is traverse identity
+    object identity {
+      given id[F[_], A]: Case.Aux[this.type, F[A], F[A]] = 
+        Case.createInstance(i => i)
+    }
+
+    val tuple: (Option[Int], Option[Double]) = (Some(20), Some(50.1))
+    val result: Option[(Int, Double)] = tuple.traverse(identity)
+
+    // didn't compile yet, but work with concrete types of tuple.
+    // def sequence[T <: Tuple, F[_]: Monad](tuple: TupleMap[T, F]): F[TupleInverseMap[TupleMap[T, F], F]] = 
+    //   tuple.traverse(identity)
+    
     assertEquals(result, Some((20, 50.1)))
   }
 }

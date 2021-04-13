@@ -1,5 +1,7 @@
 package com.thaj.scala.three.shapeless.typeclasses
 
+import com.thaj.scala.three.shapeless.TupleTypes._
+
 trait MapperF[F[_], P, A] {
   type Out <: Tuple
   def apply(a: A): F[Out]
@@ -30,9 +32,10 @@ object MapperF {
     // to the phantom type P. Otherwise its an ambiguity.
     // In real shapeless, this P is of the type `Poly`
     def traverse[F[_]]: Traverse[F, A] = new Traverse[F, A](tuple)
+    
   }
 
-  class Traverse[F[_], A](tuple: A) {
+  class Traverse[F[_], A <: Tuple](tuple: A) {
     def apply[P](p: P)(using M: MapperF[F, P, A]): F[M.Out] = M.apply(tuple)
   }
 }
