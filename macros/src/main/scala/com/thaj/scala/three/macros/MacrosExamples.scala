@@ -14,7 +14,7 @@ object Macros {
     inline def assert(expr: => Boolean): Unit = 
       ${assertImpl('{expr})}
 
-    def assertImpl(expr: Expr[Boolean])(using Quotes): Expr[Any] = '{
+    def assertImpl(expr: Expr[Boolean])(using Quotes): Expr[Unit] = '{
        val result = ${expr}
        val render = ${Expr(expr.show)}
 
