@@ -117,4 +117,35 @@ class TestShapeless {
     
     assertEquals(result, Some((20, 50.1)))
   }
+
+    @Test def testMapUsingTraverse() = {
+    import MapperF._
+    import com.thaj.scala.three.shapeless.typeclasses._
+
+    type Id[A] = A
+
+    given Monad[Id] with {
+      def pure[A](a: A): A = a
+      def map[A, B](f: A)(g: A => B): B = g(f)
+      def flatMap[A, B](f: A)(g: A => B): B = g(f)
+    }
+
+    // Based on the idea that sequence is traverse identity
+    object identity {
+      given Case.Aux[this.type, Int, Int] = 
+        Case.createInstance(i => i * i)
+
+      given Case.Aux[this.type, Double, Double] = 
+        Case.createInstance(i => i * i)
+    }
+
+    val tuple: (Int, Double) = (20, 50.1)
+    val result: (Int, Double) = tuple.traverse[Id](identity)
+
+    // didn't compile yet, but work with concrete types of tuple.
+    // def sequence[T <: Tuple, F[_]: Monad](tuple: TupleMap[T, F]): F[TupleInverseMap[TupleMap[T, F], F]] = 
+    //   tuple.traverse(identity)
+    
+    assertEquals(result, (400, 2510.01))
+  }
 }
