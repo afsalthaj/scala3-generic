@@ -1,7 +1,7 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
-import com.thaj.scala.three.shapeless.TupleTypes._
-import com.thaj.scala.three.shapeless.ops.tuple._
+import com.thaj.scala.three.generic.TupleTypes._
+import com.thaj.scala.three.generic.ops.tuple._
 
 object InbuiltSimpleMapExample extends App {
   val tuple: (Int, Double) = 

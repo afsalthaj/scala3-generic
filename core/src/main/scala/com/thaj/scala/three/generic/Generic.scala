@@ -1,4 +1,4 @@
-package com.thaj.scala.three.shapeless
+package com.thaj.scala.three.generic
 
 import TupleTypes.{Head, Second}
 import scala.deriving._

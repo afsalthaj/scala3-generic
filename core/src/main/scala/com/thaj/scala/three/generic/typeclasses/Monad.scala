@@ -1,4 +1,4 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
 trait Monad[F[_]] {
   def pure[A](a: A): F[A]

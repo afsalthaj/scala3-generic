@@ -1,4 +1,4 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
 /**
  * Naive map implementation of mapping a tuple.

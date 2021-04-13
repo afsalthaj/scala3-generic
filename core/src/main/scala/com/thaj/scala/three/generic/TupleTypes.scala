@@ -1,4 +1,4 @@
-package com.thaj.scala.three.shapeless
+package com.thaj.scala.three.generic
 
 object TupleTypes {
   type TupleMap[T <: Tuple, F[_]] <: Tuple = T match {

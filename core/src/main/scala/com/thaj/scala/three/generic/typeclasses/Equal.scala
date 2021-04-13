@@ -1,6 +1,6 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
-import com.thaj.scala.three.shapeless.Generic
+import com.thaj.scala.three.generic.Generic
 
 trait Equal[A] {
   def eq(a: A, b: A): Boolean

@@ -1,6 +1,6 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
-import com.thaj.scala.three.shapeless.TupleTypes._
+import com.thaj.scala.three.generic.TupleTypes._
 
 trait MapperF[F[_], P, A] {
   type Out <: Tuple

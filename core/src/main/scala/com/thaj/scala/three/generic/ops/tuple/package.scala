@@ -1,10 +1,10 @@
-package com.thaj.scala.three.shapeless.ops
+package com.thaj.scala.three.generic.ops
 
-import com.thaj.scala.three.shapeless.TupleTypes.{Head, Second, TupleInverseMap, TupleMap, Tail}
-import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.typeclasses
-import com.thaj.scala.three.shapeless.typeclasses.Case
-import com.thaj.scala.three.shapeless.typeclasses.Monad
+import com.thaj.scala.three.generic.TupleTypes.{Head, Second, TupleInverseMap, TupleMap, Tail}
+import com.thaj.scala.three.generic.Generic
+import com.thaj.scala.three.generic.typeclasses
+import com.thaj.scala.three.generic.typeclasses.Case
+import com.thaj.scala.three.generic.typeclasses.Monad
 
 package object tuple {
   import Generic._

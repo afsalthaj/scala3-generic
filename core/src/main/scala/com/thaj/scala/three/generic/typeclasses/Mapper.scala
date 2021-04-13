@@ -1,6 +1,6 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
-import com.thaj.scala.three.shapeless.TupleTypes.{TupleInverseMap, TupleMap}
+import com.thaj.scala.three.generic.TupleTypes.{TupleInverseMap, TupleMap}
 /**
  * A better implementation of MapperBasic, where
  * now users have control over the list of cases that can be used to map over the tuple.

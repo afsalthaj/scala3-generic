@@ -1,8 +1,8 @@
-package com.thaj.scala.three.shapeless.typeclasses
+package com.thaj.scala.three.generic.typeclasses
 
-import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.TupleTypes
-import com.thaj.scala.three.shapeless.ops.tuple._
+import com.thaj.scala.three.generic.Generic
+import com.thaj.scala.three.generic.TupleTypes
+import com.thaj.scala.three.generic.ops.tuple._
 
 trait Head[A] {
   type Out

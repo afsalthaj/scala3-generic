@@ -1,8 +1,8 @@
 import org.junit.Test
 import org.junit.Assert._
-import com.thaj.scala.three.shapeless.ops.tuple._
-import com.thaj.scala.three.shapeless.Generic
-import com.thaj.scala.three.shapeless.typeclasses.{ Equal, Head, Second }
+import com.thaj.scala.three.generic.ops.tuple._
+import com.thaj.scala.three.generic.Generic
+import com.thaj.scala.three.generic.typeclasses.{ Equal, Head, Second }
 
 import com.thaj.scala.three.shapeless.bounds._
 
