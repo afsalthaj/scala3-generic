@@ -17,7 +17,7 @@ class TestShapeless {
   }
 
   @Test def unsafeSequenceTuple() = {
-    val result: Option[(Int, String)] =
+    val result =
       unsafeSequence((Some(1), Some("afsal")))
 
     assertEquals(result, Some(1 -> "afsal"))
@@ -120,7 +120,7 @@ class TestShapeless {
 
     @Test def testMapUsingTraverse() = {
     import MapperF._
-    import com.thaj.scala.three.shapeless.typeclasses._
+    import com.thaj.scala.three.generic.typeclasses._
 
     type Id[A] = A
 

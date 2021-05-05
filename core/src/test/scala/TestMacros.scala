@@ -4,7 +4,7 @@ import com.thaj.scala.three.generic.ops.tuple._
 import com.thaj.scala.three.generic.Generic
 import com.thaj.scala.three.generic.typeclasses.{ Equal, Head, Second }
 
-import com.thaj.scala.three.shapeless.bounds._
+import com.thaj.scala.three.generic.typeclasses._
 
 import com.thaj.scala.three.macros._
 import scala.util._

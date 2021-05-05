@@ -6,7 +6,6 @@ import scala.deriving._
 trait Generic[A] {
   type Repr
   def to(a: A): Repr
-  // Later addition
   def from(a: Repr): A
 }
 

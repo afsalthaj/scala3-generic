@@ -6,6 +6,11 @@ object TupleTypes {
     case h *: t => F[h] *: TupleMap[t, F]
   }
 
+  type II = (Int, Int)
+  val s: (Int, Int) = (1, 2)
+  val s2: (Option[Int], Option[Int]) = (Some(1), Some(2))
+
+  
   type TupleInverseMap[T, F[_]] <: Tuple = T match {
     case EmptyTuple => EmptyTuple
     case F[h] *: t => h *: TupleInverseMap[t, F]
@@ -22,5 +27,4 @@ object TupleTypes {
   type Tail[T <: Tuple] <: Tuple = T match {
     case h *: tail => tail
   }
-
 }

@@ -5,6 +5,10 @@ class Natural(v: Int) {
 }
 
 object Natural:
-   transparent inline def apply(v: Int): Option[Natural]  = 
-     if (v > 0) Some(new Natural(v)) else None
+  transparent inline def apply(v: Int): Either[String, Natural]  = 
+     if (v > 0) Right(new Natural(v)) else Left("failed")
 end Natural
+
+object x:
+  val x = Natural(1)
+
